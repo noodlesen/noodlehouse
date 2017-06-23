@@ -5,6 +5,7 @@ import django.contrib.auth.views as auth_views
 
 urlpatterns = [
     url(r'^$', views.main_page, name='main_page'),
+    url(r'^blog/$', views.blog_page, name='blog_page'),
     #url(r'^login/$', views.login_page, name='login_page'),
 
     #login/logout urls

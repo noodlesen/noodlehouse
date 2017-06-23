@@ -10,6 +10,10 @@ def main_page(request):
     return render(request, 'noodle/main_page.html',  {})
 
 
+def blog_page(request):
+    return render(request, 'noodle/blog_page.html',  {})
+
+
 def login_page(request):
     if request.method == "POST":
         form = LoginForm(request.POST)

@@ -1,0 +1,34 @@
+{% load staticfiles %}
+
+{% load sass_tags %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link href="{% sass_src 'scss/base.scss' %}" rel="stylesheet" type="text/css" />
+    <link href="{% sass_src 'scss/common.scss' %}" rel="stylesheet" type="text/css" />
+    
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+<!-- 
+<div style="width:780px; margin: auto; font-size:20px; line-height:36px"> -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2" style="font-size:20px; line-height:36px">
+    <p>Художник по визуальным эффектам. Cпециализируюсь на композитинге, ретуши и создании анимированной графики для рекламы и ТВ.
+Имею большой опыт решенния сложных задач по улучшению видеоматериала: устранение нежелательных элементов из кадра, замена различных элементов (логотипы, упаковка), композитинг (комбинирование) съёмочного и CG материала. Занимаюсь компьютерной графикой с 1999года. Работаю быстро и могу помочь в условиях сжатых сроков.
+Если у вас возникли вопросы, с удовольствием проконсультирую как до съемки, так и на стадии пост-продакшн.</p>
+</div>
+    </div>
+</div>
+
+    
+
+
+</body>
+</html>
