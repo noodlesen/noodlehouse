@@ -30,11 +30,13 @@ html {
 
 body {
     color: $gray2;
-    background-color: $gray6;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    background-color: #323A41;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    /* font-family: 'Roboto', sans-serif;
+    font-weight: 300; */
     //font-family: 'Arimo', sans-serif;
-    font-size: 15px;
     /* Margin bottom by footer height */
     margin-bottom: 60px;
 }

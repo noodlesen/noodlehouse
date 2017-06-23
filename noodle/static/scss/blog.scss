@@ -1,0 +1,24 @@
+@import "config";
+
+p{
+    display: block;
+    margin-bottom: 2em;
+}
+
+.page {
+    background-color: white;
+    padding: 6em 12em;
+    @include respond-to(xs){
+        padding: 2em 3em;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    @include respond-to(sm){
+        padding: 4em 8em;
+    }
+
+    @include respond-to(md){
+        padding: 5em 10em;
+    }
+}
