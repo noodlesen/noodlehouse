@@ -7,7 +7,8 @@ from django.contrib.auth import authenticate, login
 
 
 def main_page(request):
-    return render(request, 'noodle/main_page.html',  {})
+    #return render(request, 'noodle/main_page.html',  {})
+    return render(request, 'noodle/tilda.html',  {})
 
 
 def blog_page(request):
