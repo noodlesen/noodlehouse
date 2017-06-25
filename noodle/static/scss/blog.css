@@ -207,39 +207,4 @@
   background-color: #e8c9eb;
   color: white; }
 
-p {
-  display: block;
-  margin-bottom: 2em; }
-
-.page {
-  background-color: white;
-  padding: 6em 12em; }
-  @media only screen and (max-width: 767px) {
-    .page {
-      padding: 2em 3em;
-      font-size: 18px;
-      line-height: 32px; } }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .page {
-      padding: 4em 8em; } }
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .page {
-      padding: 5em 10em; } }
-
-h1 {
-  font-weight: 600; }
-
-.logo {
-  display: inline-block;
-  color: white;
-  font-size: 20px;
-  /* font-family: 'Oswald', sans-serif; */
-  font-weight: 300;
-  /* text-align: center; */ }
-
-.menu {
-  padding-left: 1em;
-  display: inline-block;
-  text-align: left; }
-
 /*# sourceMappingURL=../../../../../../../../static/scss/blog.css.map */

@@ -1,19 +1,15 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
+{% extends 'noodle/base.html' %}
 
+{% block content %}
+    <div id="reel">
+            <iframe src="//player.vimeo.com/video/102706148" width="768" height="432" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+        </div>
+        
     <p>Художник по визуальным эффектам. Cпециализируюсь на композитинге, ретуши и создании анимированной графики для рекламы и ТВ.
 Имею большой опыт решенния сложных задач по улучшению видеоматериала: устранение нежелательных элементов из кадра, замена различных элементов (логотипы, упаковка), композитинг (комбинирование) съёмочного и CG материала. Занимаюсь компьютерной графикой с 1999года. Работаю быстро и могу помочь в условиях сжатых сроков.
 Если у вас возникли вопросы, с удовольствием проконсультирую как до съемки, так и на стадии пост-продакшн.</p>
 
-    <div id="reel">
-            <iframe src="//player.vimeo.com/video/102706148" width="768" height="432" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-        <!-- <div id="download"><a href="/lapshov_reel_big.mp4">Скачать шоурил (MP4, 95Мб)</a></div> -->
-        </div>
 
-</body>
-</html>
+
+{% endblock %}
+
