@@ -38,7 +38,7 @@ h1{
 }
 
 .logo{
-    display: inline-block;
+    /* display: inline-block; */
     color:white;
     font-size: 20px;
     /* font-family: 'Oswald', sans-serif; */
@@ -46,9 +46,14 @@ h1{
     /* text-align: center; */
 }
 
+#header{
+    text-align: center;
+    margin:auto;
+}
+
 .menu{
     padding-left: 1em;
-    display: inline-block;
+    /* display: inline-block; */
     text-align: left;
     font-weight: 300;
 }
