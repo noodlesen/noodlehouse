@@ -3,3 +3,4 @@ db.sqlite3
 *.pyc
 noodlehouse/settings.py
 noodlehouse/wsgi.py
+noodle/static/images/galleries/

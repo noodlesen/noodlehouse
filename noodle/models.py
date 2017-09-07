@@ -28,3 +28,13 @@ class Payment(models.Model):
     #client = models.ForeignKey(Client)
     contract = models.ForeignKey(Contract)
 
+
+class PortfolioImage(models.Model):
+    description = models.CharField(max_length=255)
+
+
+class PortfolioGallery(models.Model):
+    title = models.CharField(max_length=100)
+
+
+

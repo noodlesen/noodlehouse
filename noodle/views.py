@@ -7,12 +7,16 @@ from django.contrib.auth import authenticate, login
 
 
 def main_page(request):
-    return render(request, 'noodle/main_page2.html',  {})
+    return render(request, 'noodle/main_page.html',  {})
     #return render(request, 'noodle/tilda.html',  {})
 
 
 def blog_page(request):
     return render(request, 'noodle/blog_page.html',  {})
+
+
+def gallery_page(request):
+    return render(request, 'noodle/gallery.html',  {})
 
 
 def login_page(request):

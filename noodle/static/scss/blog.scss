@@ -1,2 +1,68 @@
 @import "config";
 
+
+@import "config";
+
+
+body {
+    color: $gray2;
+    background-color: #323A41;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 60px;
+}
+
+p{
+    display: block;
+    margin-bottom: 2em;
+}
+
+.page {
+    background-color: white;
+    padding: 6em 12em;
+    @include respond-to(xs){
+        padding: 2em 3em;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    @include respond-to(sm){
+        padding: 4em 8em;
+    }
+
+    @include respond-to(md){
+        padding: 5em 10em;
+    }
+}
+
+h1{
+    font-weight: 600;
+}
+
+.logo{
+    /* display: inline-block; */
+    color:white;
+    font-size: 20px;
+    /* font-family: 'Oswald', sans-serif; */
+    font-weight: 300;
+    /* text-align: center; */
+}
+
+#header{
+    text-align: center;
+    margin:auto;
+}
+
+.menu{
+    padding-left: 1em;
+    /* display: inline-block; */
+    text-align: left;
+    font-weight: 300;
+    a {
+        text-decoration: none;
+        color: gray;
+    }
+}
+
+
