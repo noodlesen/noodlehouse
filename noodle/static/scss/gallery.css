@@ -1,8 +1,9 @@
 body {
-  background-color: #222;
+  background-color: black;
+  /* #222; */
   font-family: 'Open Sans', sans-serif; }
 
-#header {
+#gallery-header {
   height: 60px;
   text-align: center;
   width: 100%;

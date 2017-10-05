@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "../../Users/lapshov/Documents/dve/noodlehouse/noodle/static/scss/onepage.css",
+	"sources": [
+		"../../Users/lapshov/Documents/dve/noodlehouse/noodle/static/scss/onepage.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,MAAM,CAAA;EAEF,YAAY,EAAC,GAAG;EAEhB,YAAY,EAAE,KAAK;EACnB,YAAY,EAAE,eAAe;EAC7B,oBAAoB;EACpB,gBAAgB,EAAE,IAAI,GACzB"
+}

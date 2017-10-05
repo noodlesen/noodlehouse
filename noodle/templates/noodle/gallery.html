@@ -8,12 +8,13 @@
     <link href="{% sass_src 'scss/gallery.scss' %}" rel="stylesheet" type="text/css" />
 {% endblock %}
 
+{% block header %}<a href="/">< Назад</a>{% endblock %}
 {% block content %}
-    <div id="main">
-        <div id="p1" class="photo h-photo"><img src="{% static 'images/galleries/cambo_bw/1.jpg' %}" /></div>
-        <div id="p2" class="photo v-photo"><img src="{% static 'images/galleries/cambo_bw/KTZ_4426.jpg' %}" /></div>
-        <div id="p3" class="photo h-photo"><img src="{% static 'images/galleries/cambo_bw/2.jpg' %}" /></div>
-        <div id="p4" class="photo h-photo"><img src="{% static 'images/galleries/cambo_bw/3.jpg' %}" /></div>
+    <div id="gallery">
+        <div id="g1p1" class="photo h-photo p1"><img src="{% static 'images/galleries/cambo_bw/1.jpg' %}" /></div>
+        <div id="g1p2" class="photo v-photo p2"><img src="{% static 'images/galleries/cambo_bw/KTZ_4426.jpg' %}" /></div>
+        <div id="g1p3" class="photo h-photo p3"><img src="{% static 'images/galleries/cambo_bw/2.jpg' %}" /></div>
+        <div id="g1p4" class="photo h-photo p4"><img src="{% static 'images/galleries/cambo_bw/3.jpg' %}" /></div>
     </div>
 {% endblock %}
 

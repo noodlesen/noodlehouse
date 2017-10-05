@@ -1,0 +1,109 @@
+@import "config";
+
+
+body {
+    color: $gray2;
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 60px;
+    text-align: center;
+    max-width: 1200px;
+    margin:auto;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#reel{
+    margin-bottom: 1em;
+}
+
+#hero {
+    height:720px;
+    background-color: gray;
+    padding-top:12%;
+    h1{
+        color:white;
+        font-weight: bold;
+        font-size: 300%;
+    }
+    @include respond-to(md){
+        height: 580px;
+        h1{
+            font-size: 250%;
+        }
+    }
+    @include respond-to(sm){
+        height: 500px;
+        h1{
+            font-size: 200%;
+        }
+    }
+    @include respond-to(xs){
+        height: 400px;
+        h1{
+            font-size: 120%;
+        }
+    }
+
+}
+
+h2{
+    font-size: 220%;
+    display: block;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.slide {
+    background-color: $gray6;
+    padding: 2em 5em 4em;
+    border-width: 0 0 2px 0;
+    border-color: $gray4;
+    border-style: solid;
+}
+
+.slide-odd{
+    background-color: $gray6;
+}
+.slide-even{
+    background-color: $gray5;
+}
+
+.btn-contact{
+    font-size: 220%;
+    text-decoration: none;
+    display: block;
+    padding: .8em;
+    border-radius: .7em;
+    background-color: $dark-green;
+    color: white;
+    width: 60%;
+    margin: 1em auto;
+    @include respond-to(lg){
+        &:hover{
+            background-color: $green;
+        }
+    }
+}
+
+.bigger{
+    font-size: 110%;
+}
+
+.smaller{
+    font-size: 90%;
+}

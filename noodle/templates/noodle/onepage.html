@@ -1,0 +1,51 @@
+{% extends 'noodle/base.html' %}
+{% load staticfiles %}
+{% load sass_tags %}
+
+{% block head %}
+    <link href="{% sass_src 'scss/onepage.scss' %}" rel="stylesheet" type="text/css" />
+    <link href="{% sass_src 'scss/gallery.scss' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+
+<div class="slide">
+    <div id="gallery" class="gallery">
+        <div class="photo h-photo p1"><img src="{% static 'images/galleries/portrait/1.jpg' %}" /></div>
+        <div class="photo h-photo p2"><img src="{% static 'images/galleries/portrait/2.jpg' %}" /></div>
+        <div class="photo h-photo p3"><img src="{% static 'images/galleries/portrait/3.jpg' %}" /></div>
+        <div class="photo h-photo p4"><img src="{% static 'images/galleries/portrait/4.jpg' %}" /></div>
+        <div class="photo h-photo p5"><img src="{% static 'images/galleries/portrait/5.jpg' %}" /></div>
+        <div class="photo h-photo p6"><img src="{% static 'images/galleries/portrait/6.jpg' %}" /></div>
+        <div class="photo h-photo p7"><img src="{% static 'images/galleries/portrait/7.jpg' %}" /></div>
+    </div>
+</div>
+
+<!-- <div class="slide">
+    <div id="gallery" class="gallery">
+        <div class="photo h-photo p1"><img src="{% static 'images/galleries/cambo_bw/1.jpg' %}" /></div>
+        <div class="photo h-photo p2"><img src="{% static 'images/galleries/cambo_bw/KTZ_4426.jpg' %}" /></div>
+        <div class="photo h-photo p3"><img src="{% static 'images/galleries/cambo_bw/2.jpg' %}" /></div>
+        <div class="photo h-photo p4"><img src="{% static 'images/galleries/cambo_bw/3.jpg' %}" /></div>
+    </div>
+</div>
+
+<div class="slide">
+    <div id="gallery2" class="gallery">
+        <div class="photo h-photo p1"><img src="{% static 'images/galleries/malay/0.jpg' %}" /></div>
+        <div class="photo h-photo p2"><img src="{% static 'images/galleries/malay/2.jpg' %}" /></div>
+        <div class="photo h-photo p3"><img src="{% static 'images/galleries/malay/7.jpg' %}" /></div>
+        <div class="photo h-photo p4"><img src="{% static 'images/galleries/malay/8.jpg' %}" /></div>
+    </div>
+</div>
+
+ -->
+
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript" src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/gallery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/onepage.js' %}"></script>
+{% endblock %}
+

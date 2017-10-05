@@ -7,6 +7,10 @@ from django.contrib.auth import authenticate, login
 
 
 def main_page(request):
+    return render(request, 'noodle/onepage.html',  {})
+    #return render(request, 'noodle/tilda.html',  {})
+
+def video_page(request):
     return render(request, 'noodle/main_page.html',  {})
     #return render(request, 'noodle/tilda.html',  {})
 
@@ -17,6 +21,9 @@ def blog_page(request):
 
 def gallery_page(request):
     return render(request, 'noodle/gallery.html',  {})
+
+def landing_page(request):
+    return render(request, 'noodle/landing.html',  {})
 
 
 def login_page(request):

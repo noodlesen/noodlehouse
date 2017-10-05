@@ -1,9 +1,18 @@
 $(document).ready(function(){
     var sp = 1;
-    var count=4;
+    var count=7;
+    var g=1;
+    var adaptive = true;
 
+    function getImageID(){
+        var res = '.p'+sp;
+        //var res = '#g'+g+'p'+sp;
+        console.log(res);
+        return (res);
+    }
 
     function changePhoto(inc){
+
         var ni=sp;
         ni+=inc;
         if (ni>count){
@@ -13,18 +22,21 @@ $(document).ready(function(){
             ni=count;
         }
 
-        $('#p'+sp).fadeOut(100);
+        $(getImageID()).fadeOut(100);
         sp=ni;
         setTimeout(function(){
-            $('#p'+sp).fadeIn(300);
+            $(getImageID()).fadeIn(300);
         }, 105);
     }
 
 
     // Running the gallery
-    $('#main').height($(window).height()*0.95-70);
     $('.photo').hide();
-    $('#p1').show();
+    if(adaptive){
+        $('.gallery').height($(window).height()*0.95-70);
+    }
+    
+    $(getImageID()).fadeIn(300);
 
 
     // Event listeners
