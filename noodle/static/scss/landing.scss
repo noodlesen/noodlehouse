@@ -100,10 +100,53 @@ h2{
     }
 }
 
+p{
+    text-align: left;
+    margin: 0 auto 2em;
+    display: block;
+    width: 90%;
+}
+
 .bigger{
-    font-size: 110%;
+    font-size: 120%;
+    width:90%;
 }
 
 .smaller{
-    font-size: 90%;
+    font-size: 88%;
+    width:75%;
+    line-height: 30px;
+}
+
+.statement-comment{
+    font-size: 88%;
+    width:60%;
+    line-height: 30px;
+    margin-top: -3em;
+    text-align: center;
+}
+
+.statement{
+    width:80%;
+    padding: .8em;
+    border-width: 1px 0px;
+    border-style: dotted;
+    border-color: $gray4;
+    font-size: 160%;
+    font-weight: 300;
+    line-height: 1.2em;
+    text-align: center;
+    ul{
+        list-style: none;
+        line-height: 1.8em;
+    }
+}
+
+div.statement{
+    margin:auto;
+}
+
+strong{
+    font-weight: 600;
+    //text-decoration: underline;
 }

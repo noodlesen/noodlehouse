@@ -7,8 +7,8 @@ from django.contrib.auth import authenticate, login
 
 
 def main_page(request):
-    return render(request, 'noodle/onepage.html',  {})
-    #return render(request, 'noodle/tilda.html',  {})
+    #return render(request, 'noodle/onepage.html',  {})
+    return render(request, 'noodle/tilda.html',  {})
 
 def video_page(request):
     return render(request, 'noodle/main_page.html',  {})

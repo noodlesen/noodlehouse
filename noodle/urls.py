@@ -8,7 +8,7 @@ urlpatterns = [
     url(r'^blog/$', views.blog_page, name='blog_page'),
     url(r'^gallery/$', views.gallery_page, name='gallery_page'),
     url(r'^video/$', views.video_page, name='video_page'),
-    url(r'^landing/$', views.landing_page, name='landing_page'),
+    url(r'^photoshop/$', views.landing_page, name='landing_page'),
     #url(r'^login/$', views.login_page, name='login_page'),
 
 
