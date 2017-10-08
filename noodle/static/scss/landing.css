@@ -216,7 +216,13 @@ body {
   margin-bottom: 60px;
   text-align: center;
   max-width: 1200px;
+  background-image: url("../images/newback.jpg");
+  background-position: -240px 0;
+  background-size: 200%;
   margin: auto; }
+  @media only screen and (max-width: 767px) {
+    body {
+      text-align: left; } }
 
 .videoWrapper {
   position: relative;
@@ -238,11 +244,16 @@ body {
 #hero {
   height: 720px;
   background-color: gray;
-  padding-top: 12%; }
+  padding: 12% 1em 0;
+  background-image: url("../images/hero.jpg");
+  background-position: center;
+  background-size: 100%; }
   #hero h1 {
     color: white;
     font-weight: bold;
-    font-size: 300%; }
+    font-size: 300%;
+    text-align: center;
+    text-shadow: 4px 4px 4px black; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     #hero {
       height: 580px; }
@@ -250,20 +261,37 @@ body {
         font-size: 250%; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     #hero {
-      height: 500px; }
+      height: 420px; }
       #hero h1 {
         font-size: 200%; } }
   @media only screen and (max-width: 767px) {
     #hero {
+      background-size: auto;
       height: 400px; }
       #hero h1 {
-        font-size: 120%; } }
+        font-size: 160%; } }
+
+p.subheader {
+  font-size: 120%;
+  text-align: center;
+  color: white;
+  line-height: 24px;
+  text-shadow: 2px 2px 2px black; }
+  @media only screen and (min-width: 1200px) {
+    p.subheader {
+      font-size: 160%;
+      text-shadow: 4px 4px 2px black; } }
 
 h2 {
   font-size: 220%;
   display: block;
   margin-bottom: 1em;
   margin-top: 1em; }
+  @media only screen and (max-width: 767px) {
+    h2 {
+      font-size: 120%;
+      text-align: left;
+      font-weight: 600; } }
 
 .slide {
   background-color: #f8f8f8;
@@ -271,6 +299,9 @@ h2 {
   border-width: 0 0 2px 0;
   border-color: #c6c6c6;
   border-style: solid; }
+  @media only screen and (max-width: 767px) {
+    .slide {
+      padding: 1em 1em 2em; } }
 
 .slide-odd {
   background-color: #f8f8f8; }
@@ -291,21 +322,42 @@ h2 {
   @media only screen and (min-width: 1200px) {
     .btn-contact:hover {
       background-color: #55d426; } }
+  @media only screen and (max-width: 767px) {
+    .btn-contact {
+      font-size: 110%;
+      text-align: center;
+      width: 100%; } }
 
 p {
   text-align: left;
   margin: 0 auto 2em;
   display: block;
   width: 90%; }
+  @media only screen and (max-width: 767px) {
+    p {
+      font-size: 90%;
+      width: 100%; } }
 
 .bigger {
   font-size: 120%;
   width: 90%; }
+  @media only screen and (max-width: 767px) {
+    .bigger {
+      width: 100%;
+      font-size: 90%; } }
 
 .smaller {
+  border-style: dotted;
+  border-width: 0 0 0 1px;
+  border-color: #c6c6c6;
+  padding: 0 0 0 .5em;
   font-size: 88%;
   width: 75%;
   line-height: 30px; }
+  @media only screen and (max-width: 767px) {
+    .smaller {
+      font-size: 75%;
+      width: 90%; } }
 
 .statement-comment {
   font-size: 88%;
@@ -313,6 +365,14 @@ p {
   line-height: 30px;
   margin-top: -3em;
   text-align: center; }
+  @media only screen and (max-width: 767px) {
+    .statement-comment {
+      margin-top: -2em;
+      font-size: 75%;
+      width: 90%;
+      text-align: left;
+      line-height: 18px;
+      font-weight: 300; } }
 
 .statement {
   width: 80%;
@@ -324,9 +384,18 @@ p {
   font-weight: 300;
   line-height: 1.2em;
   text-align: center; }
-  .statement ul {
-    list-style: none;
-    line-height: 1.8em; }
+  .statement .point {
+    line-height: 1.8em;
+    margin-bottom: 0.5em; }
+  @media only screen and (max-width: 767px) {
+    .statement {
+      width: 100%;
+      font-size: 110%;
+      text-align: left;
+      padding: .8em 0; }
+      .statement .point {
+        line-height: 1.2em;
+        margin-bottom: 0.5em; } }
 
 div.statement {
   margin: auto; }

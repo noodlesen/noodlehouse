@@ -10,7 +10,15 @@ body {
     margin-bottom: 60px;
     text-align: center;
     max-width: 1200px;
+    background-image: url('../images/newback.jpg');
+    background-position: -240px 0;
+    background-size: 200%;
+
     margin:auto;
+    @include respond-to(xs){
+        text-align: left;
+    }
+
 }
 
 .videoWrapper {
@@ -34,12 +42,19 @@ body {
 #hero {
     height:720px;
     background-color: gray;
-    padding-top:12%;
+    padding: 12% 1em 0;
+    background-image: url('../images/hero.jpg');
+    background-position: center;
+    background-size: 100%;
+
     h1{
         color:white;
         font-weight: bold;
         font-size: 300%;
+        text-align: center;
+        text-shadow: 4px 4px 4px black;
     }
+
     @include respond-to(md){
         height: 580px;
         h1{
@@ -47,25 +62,47 @@ body {
         }
     }
     @include respond-to(sm){
-        height: 500px;
+        
+        height: 420px;
         h1{
             font-size: 200%;
         }
     }
     @include respond-to(xs){
+        background-size: auto;
         height: 400px;
         h1{
-            font-size: 120%;
+            font-size: 160%;
         }
     }
 
 }
+
+p.subheader{
+    font-size: 120%;
+    text-align: center;
+    color: white;
+    line-height: 24px;
+    text-shadow: 2px 2px 2px black;
+    @include respond-to(lg){
+        font-size: 160%;
+        text-shadow: 4px 4px 2px black;
+    }
+}
+
+
+
 
 h2{
     font-size: 220%;
     display: block;
     margin-bottom: 1em;
     margin-top: 1em;
+    @include respond-to(xs){
+        font-size: 120%;
+        text-align: left;
+        font-weight: 600;
+    }
 }
 
 .slide {
@@ -74,6 +111,9 @@ h2{
     border-width: 0 0 2px 0;
     border-color: $gray4;
     border-style: solid;
+    @include respond-to(xs){
+        padding: 1em 1em 2em;
+    }
 }
 
 .slide-odd{
@@ -98,6 +138,11 @@ h2{
             background-color: $green;
         }
     }
+    @include respond-to(xs){
+        font-size: 110%;
+        text-align: center;
+        width:100%;
+    }
 }
 
 p{
@@ -105,17 +150,33 @@ p{
     margin: 0 auto 2em;
     display: block;
     width: 90%;
+    @include respond-to(xs){
+        font-size: 90%;
+        width:100%;
+    }
 }
 
 .bigger{
     font-size: 120%;
     width:90%;
+    @include respond-to(xs){
+        width: 100%;
+        font-size: 90%;
+    }
 }
 
 .smaller{
+    border-style: dotted;
+    border-width: 0 0 0 1px;
+    border-color: $gray4;
+    padding: 0 0 0 .5em;
     font-size: 88%;
     width:75%;
     line-height: 30px;
+    @include respond-to(xs){
+        font-size: 75%;
+        width: 90%;
+    }
 }
 
 .statement-comment{
@@ -124,6 +185,14 @@ p{
     line-height: 30px;
     margin-top: -3em;
     text-align: center;
+    @include respond-to(xs){
+        margin-top: -2em;
+        font-size: 75%;
+        width:90%;
+        text-align: left;
+        line-height: 18px;
+        font-weight: 300;
+    }
 }
 
 .statement{
@@ -136,9 +205,19 @@ p{
     font-weight: 300;
     line-height: 1.2em;
     text-align: center;
-    ul{
-        list-style: none;
+    .point{
         line-height: 1.8em;
+        margin-bottom: 0.5em;
+    }
+    @include respond-to(xs){
+        width:100%;
+        font-size: 110%;
+        text-align: left;
+        padding: .8em 0;
+        .point{
+            line-height: 1.2em;
+            margin-bottom: 0.5em;
+        }
     }
 }
 
@@ -150,3 +229,4 @@ strong{
     font-weight: 600;
     //text-decoration: underline;
 }
+
