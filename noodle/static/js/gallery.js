@@ -1,13 +1,27 @@
 $(document).ready(function(){
     var sp = 1;
-    var count=7;
+    var count=13;
     var g=1;
     var adaptive = true;
+    var touched = false;
+
+    autoList=function(){
+            setTimeout(function(){
+                if (!touched){
+                    changePhoto(1);
+                }
+                touched = false;
+                autoList();
+            },5000);
+    };
+
+    autoList();
+
 
     function getImageID(){
         var res = '.p'+sp;
         //var res = '#g'+g+'p'+sp;
-        console.log(res);
+        // console.log(res);
         return (res);
     }
 
@@ -22,18 +36,18 @@ $(document).ready(function(){
             ni=count;
         }
 
-        $(getImageID()).fadeOut(100);
+        $(getImageID()).fadeOut(300);
         sp=ni;
         setTimeout(function(){
-            $(getImageID()).fadeIn(300);
-        }, 105);
+            $(getImageID()).fadeIn(600);
+        }, 305);
     }
 
 
     // Running the gallery
     $('.photo').hide();
     if(adaptive){
-        $('.gallery').height($(window).height()*0.95-70);
+        //$('.gallery').height($(window).height()*0.95-70);
     }
     
     $(getImageID()).fadeIn(300);
@@ -46,9 +60,13 @@ $(document).ready(function(){
 
     $('body').keyup(function(e){
         if(e.keyCode == 32 || e.keyCode == 39 || e.keyCode == 40 ){
+            e.preventDefault();
+            touched = true;
             changePhoto(1);
         }
         else if(e.keyCode == 37 || e.keyCode == 38){
+            e.preventDefault();
+            touched = true;
             changePhoto(-1);
         }
     });

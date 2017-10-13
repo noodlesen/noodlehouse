@@ -4,7 +4,7 @@ $(document).ready(function(){
     if (wh>=ww){
         $('.slide').height(ww);
     } else {
-        $('.slide').height(ww/16*10);
+        $('.slide').height(ww/16*8.9);
     }
     
 });

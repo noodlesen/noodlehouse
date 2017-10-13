@@ -10,6 +10,10 @@ def main_page(request):
     #return render(request, 'noodle/onepage.html',  {})
     return render(request, 'noodle/tilda.html',  {})
 
+def one_page(request):
+    return render(request, 'noodle/onepage.html',  {})
+    #return render(request, 'noodle/tilda.html',  {})
+
 def video_page(request):
     return render(request, 'noodle/main_page.html',  {})
     #return render(request, 'noodle/tilda.html',  {})
