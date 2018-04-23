@@ -18,5 +18,5 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^noodle-admin/', admin.site.urls),
-    url(r'^', include('noodle.urls', namespace='noodle', app_name='noodle')),
+    url(r'^', include('noodle.urls')),
 ]
